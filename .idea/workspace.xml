@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0bbef065-74b6-4c30-a503-8222ab44d17c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/.idea/CNR_170608_SOURCE_box2d_simulation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/examples/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../REALCompetitionStartingKit/realcomp/envs/realcomp_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/../REALCompetitionStartingKit/realcomp/envs/realcomp_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../REALCompetitionStartingKit/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/../REALCompetitionStartingKit/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/Box2DSim_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/Box2DSim_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/JsonToPyBox2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/JsonToPyBox2D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/Simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/Simulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/examples/calibrate.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/examples/calibrate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/examples/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/examples/test.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation" />
+  </component>
+  <component name="JupyterTrust" id="5a2bf562-68a9-4a45-ae3d-62beba05229b" />
+  <component name="ProjectId" id="1SeayrYOoo1YEs9OXfYYroF2Wgm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bbo" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bbo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/results" />
+      <recent name="$PROJECT_DIR$/pi2bb" />
+      <recent name="$PROJECT_DIR$/dmps" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.dmp_discrete">
+    <configuration name="LWR" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pi2bb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LWR.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dmp_discrete" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pi2bb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dmps" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dmps/dmp_discrete.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pi2bb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="regression_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pi2bb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/regression_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="weights_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pi2bb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weights_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.dmp_discrete" />
+        <item itemvalue="Python.regression_test" />
+        <item itemvalue="Python.weights_test" />
+        <item itemvalue="Python.LWR" />
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bbef065-74b6-4c30-a503-8222ab44d17c" name="Default Changelist" comment="" />
+      <created>1572880913385</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572880913385</updated>
+      <workItem from="1572880914476" duration="8569000" />
+      <workItem from="1572907909975" duration="104000" />
+      <workItem from="1572961712251" duration="8345000" />
+      <workItem from="1572971304179" duration="918000" />
+      <workItem from="1573032591098" duration="1014000" />
+      <workItem from="1575386853432" duration="20000" />
+      <workItem from="1575387007630" duration="2536000" />
+      <workItem from="1575553897773" duration="678000" />
+      <workItem from="1575555361134" duration="5206000" />
+      <workItem from="1575821149782" duration="2112000" />
+      <workItem from="1575903323176" duration="15199000" />
+      <workItem from="1576164011592" duration="3319000" />
+      <workItem from="1576167565121" duration="9442000" />
+      <workItem from="1576845071881" duration="92000" />
+      <workItem from="1576845188043" duration="10014000" />
+      <workItem from="1576862798499" duration="7691000" />
+      <workItem from="1577442359825" duration="2370000" />
+      <workItem from="1578487784211" duration="10440000" />
+      <workItem from="1578755005555" duration="19067000" />
+      <workItem from="1578860234528" duration="87382000" />
+      <workItem from="1579447686617" duration="1192000" />
+      <workItem from="1579449411824" duration="2029000" />
+      <workItem from="1579451957802" duration="197000" />
+      <workItem from="1579452528842" duration="9905000" />
+      <workItem from="1579519073215" duration="499000" />
+      <workItem from="1579520406561" duration="2016000" />
+      <workItem from="1579522856801" duration="4170000" />
+      <workItem from="1579533474134" duration="19425000" />
+      <workItem from="1579562175607" duration="2076000" />
+      <workItem from="1579601071572" duration="11095000" />
+      <workItem from="1579630002599" duration="12319000" />
+      <workItem from="1579794969053" duration="59678000" />
+      <workItem from="1582106225839" duration="2314000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/pydmps" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="671" y="126" key="#calibrate" timestamp="1579967204621">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="671" y="126" key="#calibrate/65.24.1855.1056@65.24.1855.1056" timestamp="1579967204621" />
+    <state x="457" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576851458237">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="457" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1576851458237" />
+    <state x="708" y="344" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578848355111">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="708" y="344" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1578848355111" />
+    <state x="805" y="258" width="374" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1579969582779">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="805" y="258" width="374" height="560" key="#com.intellij.ide.util.MemberChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1579969582779" />
+    <state x="680" y="281" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575555518557">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="680" y="281" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1575555518557" />
+    <state x="251" y="102" key="DiffContextDialog" timestamp="1576167183011">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="251" y="102" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1576167183011" />
+    <state x="779" y="297" width="495" height="482" key="FileChooserDialogImpl" timestamp="1579967105612">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="779" y="297" width="495" height="482" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1579967105612" />
+    <state width="1807" height="113" key="GridCell.Tab.0.bottom" timestamp="1582107621908">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1809" height="536" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425900" />
+    <state width="1807" height="113" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621908" />
+    <state width="1807" height="113" key="GridCell.Tab.0.center" timestamp="1582107621908">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1809" height="536" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425899" />
+    <state width="1807" height="113" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621908" />
+    <state width="1807" height="113" key="GridCell.Tab.0.left" timestamp="1582107621907">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1809" height="536" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425898" />
+    <state width="1807" height="113" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621907" />
+    <state width="1807" height="113" key="GridCell.Tab.0.right" timestamp="1582107621908">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1809" height="536" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425899" />
+    <state width="1807" height="113" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621908" />
+    <state width="1809" height="365" key="GridCell.Tab.1.bottom" timestamp="1580328425891">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1809" height="365" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425891" />
+    <state width="1809" height="365" key="GridCell.Tab.1.center" timestamp="1580328425890">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1809" height="365" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425890" />
+    <state width="1809" height="365" key="GridCell.Tab.1.left" timestamp="1580328425889">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1809" height="365" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425889" />
+    <state width="1809" height="365" key="GridCell.Tab.1.right" timestamp="1580328425890">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1809" height="365" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425890" />
+    <state x="643" y="263" width="697" height="549" key="RollbackChangesDialog" timestamp="1579030579891">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="643" y="263" width="697" height="549" key="RollbackChangesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1579030579891" />
+    <state x="486" y="174" key="SettingsEditor" timestamp="1579967437887">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="486" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1579967437887" />
+    <state x="666" y="276" width="650" height="524" key="VcsDiffUtil.ChangesDialog" timestamp="1576164320610">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="666" y="276" width="650" height="524" key="VcsDiffUtil.ChangesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1576164320610" />
+    <state x="571" y="332" key="git4idea.merge.GitPullDialog" timestamp="1576164335389">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="571" y="332" key="git4idea.merge.GitPullDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1576164335389" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1576682385139">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1576682385139" />
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1578762313846">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1578762313846" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pibb$dmp_parametric.coverage" NAME="dmp_parametric Coverage Results" MODIFIED="1575908129573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pi2bb$pybulletpi2bbtest.coverage" NAME="pybulletpi2bbtest Coverage Results" MODIFIED="1579974734063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pi2bb$pi2bb.coverage" NAME="pi2bb Coverage Results" MODIFIED="1580059745288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pi2bb$prova.coverage" NAME="prova Coverage Results" MODIFIED="1579455334220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pibb$dmp_discrete.coverage" NAME="dmp_discrete Coverage Results" MODIFIED="1575821875141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pibb$pi2bb.coverage" NAME="pi2bb Coverage Results" MODIFIED="1573033300006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pi2bb$main.coverage" NAME="main Coverage Results" MODIFIED="1580177213538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pi2bb$weights_test.coverage" NAME="weights_test Coverage Results" MODIFIED="1580312169507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pi2bb$pi2bb_parametric.coverage" NAME="pi2bb_parametric Coverage Results" MODIFIED="1578934617696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pibb$test.coverage" NAME="test Coverage Results" MODIFIED="1573033353608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pibb$pi2bb_parametric.coverage" NAME="pi2bb_parametric Coverage Results" MODIFIED="1576850482070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pi2bb$train_test.coverage" NAME="train_test Coverage Results" MODIFIED="1579541451793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pi2bb$pi2bb_parametric__1_.coverage" NAME="pi2bb_parametric (1) Coverage Results" MODIFIED="1576850987378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pi2bb" />
+    <SUITE FILE_PATH="coverage/pi2bb$one_object.coverage" NAME="one_object Coverage Results" MODIFIED="1579974539835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../REALCompetitionStartingKit/realcomp/examples" />
+    <SUITE FILE_PATH="coverage/pi2bb$LWR.coverage" NAME="LWR Coverage Results" MODIFIED="1580219659540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pi2bb$regression_test.coverage" NAME="regression_test Coverage Results" MODIFIED="1580328334071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pi2bb$utils.coverage" NAME="utils Coverage Results" MODIFIED="1578761852351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/pi2bb$cs.coverage" NAME="cs Coverage Results" MODIFIED="1577443562756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dmps" />
+    <SUITE FILE_PATH="coverage/pibb$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1576679986301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/examples" />
+    <SUITE FILE_PATH="coverage/pi2bb$goal_regressor.coverage" NAME="goal_regressor Coverage Results" MODIFIED="1578496984417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pi2bb$calibrate.coverage" NAME="calibrate Coverage Results" MODIFIED="1579967204629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../REALCompetitionStartingKit/realcomp/examples" />
+    <SUITE FILE_PATH="coverage/pi2bb$dmp_discrete.coverage" NAME="dmp_discrete Coverage Results" MODIFIED="1582107621899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dmps" />
+  </component>
+</project>
