@@ -32,8 +32,10 @@ class DMPsDiscrete(DMPs):
         return (self.gen_front_term(x, d) *
                 (np.dot(psi, self.w[d])) / np.sum(psi))
 
+
 def main():
-    dmp = DMPsDiscrete(y0 = -20)
+
+    dmp = DMPsDiscrete(y0=-20)
     y, dy, ddy = dmp.rollout(forcing_term = False)
     print(y)
     import matplotlib.pyplot as plt

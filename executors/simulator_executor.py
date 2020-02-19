@@ -4,6 +4,7 @@ from abc import ABC, abstractmethod
 class Simulator(ABC):
 
     def __init__(self, rfn, update_params):
+
         self.set_reward_fn(rfn)
         self.update_params = update_params
         self.reset()
@@ -28,5 +29,11 @@ class Simulator(ABC):
     def reset(self):
         pass
 
+    @abstractmethod
+    def execute_simulator(self):
+        pass
+
     def set_update_param(self, update_params):
         self.update_params = update_params
+
+

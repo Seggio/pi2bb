@@ -118,7 +118,7 @@ class DMPs(ABC):
         # single step of the canonical system
         x = self.cs.step(tau=tau)
 
-        # step for eac DoF
+        # step for each DoF
         for d in range(self.n_dmps):
 
             # generate the forcing term
@@ -130,10 +130,10 @@ class DMPs(ABC):
             # Current DMP acceleration, velocity, position
             self.ddy[d] = (self.ay[d] *
                            (self.by[d] * (self.g[d] - self.y[d]) -
-                           self.dy[d]/tau) + f) * tau
+                           self.dy[d]) + f)
 
             self.dy[d] += self.ddy[d] * tau * self.dt
-            self.y[d] += self.dy[d] * self.dt
+            self.y[d] += self.dy[d] * tau * self.dt
 
         return self.y, self.dy, self.ddy
 
@@ -148,13 +148,6 @@ class DMPs(ABC):
         for d in range(self.n_dmps):
             if self.y0[d] == self.g[d]:
                 self.g[d] += 1e-4
-
-    def set_params(self, y0, g, w):
-        "Sets DMP parameters: starting point, goal, weights"
-
-        self.y0 = y0
-        self.g = g
-        self.w = w
 
     def get_params(self):
 

@@ -1,7 +1,7 @@
 from datetime import datetime
 from dmps.dmp_discrete import DMPsDiscrete
 from simulator.simulator import Simulator
-from simulator.box2dsim import Box2DSimulator
+from simulator.box2dsimexecutor import Box2DSimulator
 from simulator.pybulletsim import PybulletSim
 from utils.utils import *
 import os

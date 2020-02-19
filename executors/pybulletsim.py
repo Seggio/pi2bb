@@ -12,7 +12,7 @@ class PybulletSim(Simulator):
     def set_simulator(self):
         self.simulator = REALCompEnv()
         self.simulator.robot.used_objects = ["table", "orange"]
-        #self.simulator.render("human")
+        #self.executors.render("human")
 
     def set_reward_fn(self, rfn):
         self.simulator.reward_func = rfn

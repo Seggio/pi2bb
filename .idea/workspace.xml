@@ -2,17 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bbef065-74b6-4c30-a503-8222ab44d17c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/.idea/CNR_170608_SOURCE_box2d_simulation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/examples/test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../REALCompetitionStartingKit/realcomp/envs/realcomp_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/../REALCompetitionStartingKit/realcomp/envs/realcomp_env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../REALCompetitionStartingKit/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/../REALCompetitionStartingKit/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bbo/test_pi2bb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/executors/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pi2bb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pi2bb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/Box2DSim_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/Box2DSim_env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/JsonToPyBox2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/JsonToPyBox2D.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/Simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/Simulator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/examples/calibrate.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/examples/calibrate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/examples/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/examples/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bbo/pi2bb.py" beforeDir="false" afterPath="$PROJECT_DIR$/bbo/pi2bb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmps/dmp.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmps/dmp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmps/dmp_discrete.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmps/dmp_discrete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi2bb.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi2bb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/box2dsim.py" beforeDir="false" afterPath="$PROJECT_DIR$/executors/box2dsimexecutor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/pybulletsim.py" beforeDir="false" afterPath="$PROJECT_DIR$/executors/pybulletsim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/executors/simulator_executor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +34,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="5a2bf562-68a9-4a45-ae3d-62beba05229b" />
   <component name="ProjectId" id="1SeayrYOoo1YEs9OXfYYroF2Wgm" />
@@ -39,8 +46,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bbo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/simulator" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,13 +56,16 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\serlondei\Desktop\pi2bb\simulator" />
+      <recent name="C:\Users\serlondei\Desktop\pi2bb\pi2bb" />
       <recent name="$PROJECT_DIR$/bbo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\serlondei\Desktop\pi2bb" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/results" />
       <recent name="$PROJECT_DIR$/pi2bb" />
@@ -106,28 +117,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pi2bb" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="regression_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pi2bb" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,6 +131,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/regression_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_pi2bb" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pi2bb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bbo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bbo/test_pi2bb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,10 +185,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.dmp_discrete" />
+        <item itemvalue="Python.test_pi2bb" />
+        <item itemvalue="Python.LWR" />
         <item itemvalue="Python.regression_test" />
         <item itemvalue="Python.weights_test" />
-        <item itemvalue="Python.LWR" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -246,6 +256,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -255,6 +290,11 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -262,6 +302,10 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="42" key="#Notifications" timestamp="1582117547951">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="42" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1582117547951" />
     <state x="671" y="126" key="#calibrate" timestamp="1579967204621">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -286,28 +330,33 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="251" y="102" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1576167183011" />
-    <state x="779" y="297" width="495" height="482" key="FileChooserDialogImpl" timestamp="1579967105612">
-      <screen x="65" y="24" width="1855" height="1056" />
+    <state x="526" y="199" width="495" height="482" key="FileChooserDialogImpl" timestamp="1582123491320">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="526" y="199" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1582123491320" />
     <state x="779" y="297" width="495" height="482" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1579967105612" />
-    <state width="1807" height="113" key="GridCell.Tab.0.bottom" timestamp="1582107621908">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1345" height="256" key="GridCell.Tab.0.bottom" timestamp="1582122921673">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1345" height="256" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1582122921673" />
     <state width="1809" height="536" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425900" />
     <state width="1807" height="113" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621908" />
-    <state width="1807" height="113" key="GridCell.Tab.0.center" timestamp="1582107621908">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1345" height="256" key="GridCell.Tab.0.center" timestamp="1582122921673">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1345" height="256" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1582122921673" />
     <state width="1809" height="536" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425899" />
     <state width="1807" height="113" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621908" />
-    <state width="1807" height="113" key="GridCell.Tab.0.left" timestamp="1582107621907">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1345" height="256" key="GridCell.Tab.0.left" timestamp="1582122921673">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1345" height="256" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1582122921673" />
     <state width="1809" height="536" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425898" />
     <state width="1807" height="113" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621907" />
-    <state width="1807" height="113" key="GridCell.Tab.0.right" timestamp="1582107621908">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1345" height="256" key="GridCell.Tab.0.right" timestamp="1582122921673">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1345" height="256" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582122921673" />
     <state width="1809" height="536" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425899" />
     <state width="1807" height="113" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621908" />
     <state width="1809" height="365" key="GridCell.Tab.1.bottom" timestamp="1580328425891">
@@ -330,9 +379,10 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="643" y="263" width="697" height="549" key="RollbackChangesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1579030579891" />
-    <state x="486" y="174" key="SettingsEditor" timestamp="1579967437887">
-      <screen x="65" y="24" width="1855" height="1056" />
+    <state x="310" y="53" key="SettingsEditor" timestamp="1582119163801">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="310" y="53" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1582119163801" />
     <state x="486" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1579967437887" />
     <state x="666" y="276" width="650" height="524" key="VcsDiffUtil.ChangesDialog" timestamp="1576164320610">
       <screen x="65" y="24" width="1855" height="1056" />
@@ -346,33 +396,10 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="600" height="424" key="javadoc.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1576682385139" />
-    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1578762313846">
-      <screen x="65" y="24" width="1855" height="1056" />
+    <state x="434" y="154" width="495" height="494" key="search.everywhere.popup" timestamp="1582117514632">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="434" y="154" width="495" height="494" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1582117514632" />
     <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1578762313846" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pibb$dmp_parametric.coverage" NAME="dmp_parametric Coverage Results" MODIFIED="1575908129573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pi2bb$pybulletpi2bbtest.coverage" NAME="pybulletpi2bbtest Coverage Results" MODIFIED="1579974734063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pi2bb$pi2bb.coverage" NAME="pi2bb Coverage Results" MODIFIED="1580059745288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pi2bb$prova.coverage" NAME="prova Coverage Results" MODIFIED="1579455334220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pibb$dmp_discrete.coverage" NAME="dmp_discrete Coverage Results" MODIFIED="1575821875141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pibb$pi2bb.coverage" NAME="pi2bb Coverage Results" MODIFIED="1573033300006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pi2bb$main.coverage" NAME="main Coverage Results" MODIFIED="1580177213538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pi2bb$weights_test.coverage" NAME="weights_test Coverage Results" MODIFIED="1580312169507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pi2bb$pi2bb_parametric.coverage" NAME="pi2bb_parametric Coverage Results" MODIFIED="1578934617696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pibb$test.coverage" NAME="test Coverage Results" MODIFIED="1573033353608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pibb$pi2bb_parametric.coverage" NAME="pi2bb_parametric Coverage Results" MODIFIED="1576850482070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pi2bb$train_test.coverage" NAME="train_test Coverage Results" MODIFIED="1579541451793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pi2bb$pi2bb_parametric__1_.coverage" NAME="pi2bb_parametric (1) Coverage Results" MODIFIED="1576850987378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pi2bb" />
-    <SUITE FILE_PATH="coverage/pi2bb$one_object.coverage" NAME="one_object Coverage Results" MODIFIED="1579974539835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../REALCompetitionStartingKit/realcomp/examples" />
-    <SUITE FILE_PATH="coverage/pi2bb$LWR.coverage" NAME="LWR Coverage Results" MODIFIED="1580219659540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pi2bb$regression_test.coverage" NAME="regression_test Coverage Results" MODIFIED="1580328334071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pi2bb$utils.coverage" NAME="utils Coverage Results" MODIFIED="1578761852351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/pi2bb$cs.coverage" NAME="cs Coverage Results" MODIFIED="1577443562756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dmps" />
-    <SUITE FILE_PATH="coverage/pibb$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1576679986301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/examples" />
-    <SUITE FILE_PATH="coverage/pi2bb$goal_regressor.coverage" NAME="goal_regressor Coverage Results" MODIFIED="1578496984417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pi2bb$calibrate.coverage" NAME="calibrate Coverage Results" MODIFIED="1579967204629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../REALCompetitionStartingKit/realcomp/examples" />
-    <SUITE FILE_PATH="coverage/pi2bb$dmp_discrete.coverage" NAME="dmp_discrete Coverage Results" MODIFIED="1582107621899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dmps" />
   </component>
 </project>
