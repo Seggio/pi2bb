@@ -1,15 +1,14 @@
 import numpy as np
-from abc import ABC, abstractmethod
 from dmps.cs import CanonicalSystem
 
 
-class DMPs(ABC):
+class DMP:
     """
-       An abstract class used to represent a DMP, implemented by discrete_dmps and parametric_dmps
+       A class used to represent a discrete DMP
 
        Attributes
        ----------
-       n_dmps : int
+       n_dof : int
            number of degrees of freedom
        n_bfs : int
            number of basis functions, same for each DoF
@@ -20,7 +19,7 @@ class DMPs(ABC):
        w: np.array
             DMP weights
        y/dy/ddy: np.array
-            Position/Velocity/Acceleration after a rollout
+            Current Position/Velocity/Acceleration
 
        Methods
        -------
@@ -31,31 +30,44 @@ class DMPs(ABC):
            Executes a single DMP step
        """
 
-    def __init__(self, n_dmps=1, n_bfs=25, dt=.01, w=None,
-                 y0=0, goal=1, ay=None, by=None, **kwargs):
+    def __init__(self, n_dof=1, n_bfs=25,
+                 dt=.01, run_time=1.0,
+                 w=None, y0=0, g=1, dy0=0,
+                 ay=None, by=None, **kwargs):
 
-        self.n_dmps = n_dmps
+        self.n_dof = n_dof
         self.n_bfs = n_bfs
+
         self.dt = dt
+        self.run_time = run_time
 
         if isinstance(y0, (int, float)):
-            y0 = np.ones(self.n_dmps)*y0
+            y0 = np.ones(self.n_dof) * y0
         self.y0 = y0
 
-        if isinstance(goal, (int, float)):
-            goal = np.ones(self.n_dmps)*goal
-        self.g = goal
+        if isinstance(dy0, (int, float)):
+            dy0 = np.ones(self.n_dof) * dy0
+        self.dy0 = dy0
 
-        self.w = None
-        self.initialize_weights(w)
+        if isinstance(g, (int, float)):
+            g = np.ones(self.n_dof) * g
+        self.g = g
+
+        if w is None:
+            w = np.zeros((self.n_dof, self.n_bfs))
+        self.w = w
 
         # Default value for ay/by to have the system critically dumped
-        self.ay = np.ones(n_dmps) * 25. if ay is None else ay
+        self.ay = np.ones(self.n_dof) * 25. if ay is None else ay
         self.by = self.ay / 4. if by is None else by
 
         # set up the CS
-        self.cs = CanonicalSystem(dt=self.dt, **kwargs)
-        self.timesteps = self.cs.timesteps
+        self.cs = CanonicalSystem(dt=self.dt, run_time=self.run_time, **kwargs)
+
+        # set up the kernels
+        self.centers = None
+        self.gen_centers()
+        self.h = np.ones(self.n_bfs) * self.n_bfs ** 1.5 / self.centers / self.cs.ax
 
         # set up the initial DMP state
         self.y = None
@@ -63,31 +75,23 @@ class DMPs(ABC):
         self.ddy = None
         self.reset_state()
 
-    def gen_front_term(self, x, dmp_num):
+    def gen_front_term(self, x, d):
         """Generates the term x*(goal - y0) for a specific DoF """
-        return x * (self.g[dmp_num] - self.y0[dmp_num])
+        return x * (self.g[d] - self.y0[d])
 
-    @abstractmethod
-    def gen_psi(self, x):
-        """Generates Gaussian activations for a specific x value """
-        pass
+    def gen_activations(self, x):
+        return np.exp(-self.h * (x - self.centers) ** 2)
 
-    @abstractmethod
     def gen_centers(self):
-        """Generates the Gaussians' ceters """
-        pass
+        des_c = np.linspace(0, self.cs.run_time, self.n_bfs)
+        self.centers = np.exp(-self.cs.ax * des_c)
 
-    @abstractmethod
-    def gen_forcing_term(self, x, dmp_num, **kwargs):
-        """Generate forcing term for a specific DoF and x value"""
-        pass
+    def gen_forcing_term(self, x, d):
+        psi = self.gen_activations(x)
+        return (self.gen_front_term(x, d) *
+                (np.dot(psi, self.w[d])) / np.sum(psi))
 
-    @abstractmethod
-    def initialize_weights(self, w):
-        """Initialize the DMPs' weights"""
-        pass
-
-    def rollout(self, timesteps=None, **kwargs):
+    def rollout(self, tau=1.0):
         """Executes a complete rollout of the DMPs
 
         Retruns:
@@ -97,35 +101,34 @@ class DMPs(ABC):
 
         self.reset_state()
 
-        if timesteps is None:
-            if 'tau' in kwargs:
-                timesteps = int(self.timesteps / kwargs['tau'])
-            else:
-                timesteps = self.timesteps
+        n_steps = int(self.run_time / self.dt)
 
-        y_track = np.zeros((timesteps, self.n_dmps))
-        dy_track = np.zeros((timesteps, self.n_dmps))
-        ddy_track = np.zeros((timesteps, self.n_dmps))
+        y_track = np.zeros((n_steps, self.n_dof))
+        dy_track = np.zeros((n_steps, self.n_dof))
+        ddy_track = np.zeros((n_steps, self.n_dof))
 
-        for t in range(timesteps):
-            y_track[t], dy_track[t], ddy_track[t] = self.step(**kwargs)
+        y_track[0] = self.y0
+        dy_track[0] = self.dy0
+        y_track[1] = y_track[0] + dy_track[0] * tau * self.dt
+
+        for t in range(n_steps-2):
+            y_track[t+2], dy_track[t+1], ddy_track[t] = self.step(tau=tau)
+        _, dy_track[n_steps - 1], ddy_track[n_steps - 2] = self.step(tau=tau)
+        _, _, ddy_track[n_steps-1] = self.step(tau=tau)
 
         return y_track, dy_track, ddy_track
 
-    def step(self, tau=1.0, **kwargs):
+    def step(self, tau=1.0):
         """Executes a single DMP step"""
 
         # single step of the canonical system
         x = self.cs.step(tau=tau)
 
         # step for each DoF
-        for d in range(self.n_dmps):
+        for d in range(self.n_dof):
 
             # generate the forcing term
-            forcing_term = kwargs.get("forcing_term", True)
-            f = 0
-            if forcing_term:
-                f = self.gen_forcing_term(x, d, **kwargs)
+            f = self.gen_forcing_term(x, d)
 
             # Current DMP acceleration, velocity, position
             self.ddy[d] = (self.ay[d] *
@@ -138,19 +141,51 @@ class DMPs(ABC):
         return self.y, self.dy, self.ddy
 
     def reset_state(self):
+
         self.y = self.y0.copy()
-        self.dy = np.zeros(self.n_dmps)
-        self.ddy = np.zeros(self.n_dmps)
+        self.dy = self.dy0.copy()
+        self.ddy = np.zeros(self.n_dof)
+
         self.cs.reset_state()
 
     def check_offset(self):
         """Checks the offsest g-y0, if 0 adds a noise to g in order to have a forcing term != 0"""
-        for d in range(self.n_dmps):
+
+        for d in range(self.n_dof):
             if self.y0[d] == self.g[d]:
                 self.g[d] += 1e-4
 
     def get_params(self):
+        """Returns a dictionary {param_name: param_value}"""
 
         return {"y0": self.y0,
                 "g": self.g,
                 "w": self.w}
+
+
+def main():
+
+    import matplotlib.pyplot as plt
+
+    dt = 0.01
+    run_time = 1
+    n_steps = int(run_time/dt)
+
+    dmp = DMP(y0=1, g=-1, dt=dt, run_time=run_time)
+
+    taus = [1/4, 1/2, 1, 2, 4]
+    t = np.linspace(0, run_time, n_steps)
+
+    for tau in taus:
+        y, dy, ddy = dmp.rollout(tau=tau)
+        print(y)
+        plt.plot(t, y, label=f"tau={tau}")
+
+    plt.xlabel("t")
+    plt.ylabel("dmp(t)")
+    plt.legend()
+    plt.show()
+
+
+if __name__ == "__main__":
+    main()

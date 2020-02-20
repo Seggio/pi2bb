@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bbef065-74b6-4c30-a503-8222ab44d17c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bbo/test_pi2bb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/executors/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/pi2bb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pi2bb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/Box2DSim_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/Box2DSim_env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/Simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation/box2dsim/envs/Simulator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bbo/pi2bb.py" beforeDir="false" afterPath="$PROJECT_DIR$/bbo/pi2bb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmps/cs.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmps/cs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dmps/dmp.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmps/dmp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dmps/dmp_discrete.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmps/dmp_discrete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pi2bb.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi2bb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/box2dsim.py" beforeDir="false" afterPath="$PROJECT_DIR$/executors/box2dsimexecutor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/pybulletsim.py" beforeDir="false" afterPath="$PROJECT_DIR$/executors/pybulletsim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/executors/simulator_executor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmps/dmp_parametric.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmps/dmp_parametric.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +47,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -72,7 +63,7 @@
       <recent name="$PROJECT_DIR$/dmps" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dmp_discrete">
+  <component name="RunManager" selected="Python.dmp">
     <configuration name="LWR" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pi2bb" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,6 +78,48 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LWR.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pi2bb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dmps" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dmps/cs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dmp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pi2bb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dmps" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dmps/dmp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,28 +150,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="regression_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pi2bb" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/regression_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_pi2bb" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pi2bb" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -160,35 +171,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="weights_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pi2bb" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weights_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dmp" />
+        <item itemvalue="Python.cs" />
         <item itemvalue="Python.dmp_discrete" />
         <item itemvalue="Python.test_pi2bb" />
         <item itemvalue="Python.LWR" />
-        <item itemvalue="Python.regression_test" />
-        <item itemvalue="Python.weights_test" />
       </list>
     </recent_temporary>
   </component>
@@ -299,13 +288,15 @@
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/pydmps" />
+      <path value="$PROJECT_DIR$/../REALCompetitionStartingKit" />
+      <path value="$PROJECT_DIR$/CNR_170608_SOURCE_box2d_simulation" />
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="42" key="#Notifications" timestamp="1582117547951">
+    <state x="275" y="42" key="#Notifications" timestamp="1582206207159">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="42" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1582117547951" />
+    <state x="275" y="42" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1582206207159" />
     <state x="671" y="126" key="#calibrate" timestamp="1579967204621">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -335,28 +326,28 @@
     </state>
     <state x="526" y="199" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1582123491320" />
     <state x="779" y="297" width="495" height="482" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1579967105612" />
-    <state width="1345" height="256" key="GridCell.Tab.0.bottom" timestamp="1582122921673">
+    <state width="1345" height="77" key="GridCell.Tab.0.bottom" timestamp="1582209844363">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="256" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1582122921673" />
+    <state width="1345" height="77" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1582209844363" />
     <state width="1809" height="536" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425900" />
     <state width="1807" height="113" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621908" />
-    <state width="1345" height="256" key="GridCell.Tab.0.center" timestamp="1582122921673">
+    <state width="1345" height="77" key="GridCell.Tab.0.center" timestamp="1582209844363">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="256" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1582122921673" />
+    <state width="1345" height="77" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1582209844363" />
     <state width="1809" height="536" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425899" />
     <state width="1807" height="113" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621908" />
-    <state width="1345" height="256" key="GridCell.Tab.0.left" timestamp="1582122921673">
+    <state width="1345" height="77" key="GridCell.Tab.0.left" timestamp="1582209844363">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="256" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1582122921673" />
+    <state width="1345" height="77" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1582209844363" />
     <state width="1809" height="536" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425898" />
     <state width="1807" height="113" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621907" />
-    <state width="1345" height="256" key="GridCell.Tab.0.right" timestamp="1582122921673">
+    <state width="1345" height="77" key="GridCell.Tab.0.right" timestamp="1582209844363">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="256" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582122921673" />
+    <state width="1345" height="77" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582209844363" />
     <state width="1809" height="536" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425899" />
     <state width="1807" height="113" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621908" />
     <state width="1809" height="365" key="GridCell.Tab.1.bottom" timestamp="1580328425891">
@@ -379,10 +370,10 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="643" y="263" width="697" height="549" key="RollbackChangesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1579030579891" />
-    <state x="310" y="53" key="SettingsEditor" timestamp="1582119163801">
+    <state x="310" y="53" key="SettingsEditor" timestamp="1582206300637">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="310" y="53" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1582119163801" />
+    <state x="310" y="53" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1582206300637" />
     <state x="486" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1579967437887" />
     <state x="666" y="276" width="650" height="524" key="VcsDiffUtil.ChangesDialog" timestamp="1576164320610">
       <screen x="65" y="24" width="1855" height="1056" />

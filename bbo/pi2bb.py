@@ -27,9 +27,10 @@ class Pi2BB:
         self.converged_cost = kwargs.get("converged_cost", np.inf)
         # Temperature for the softmax probability of costs
         self.temperature = kwargs.get("temperature", 1)
-        self.test_freq = kwargs.get("test_freq", 0)
         # Variance for the perturbation of the DMP parameters
         self.init_variance = self.variance = kwargs.get("variance", 1)
+
+        self.test_freq = kwargs.get("test_freq", 0)
 
         # List containing train costs for each train step
         self.train_costs = []
@@ -80,10 +81,11 @@ class Pi2BB:
                 update = np.sum(np.array(epsilons[param_name]) * np.array(update_probabilities), axis=0)
                 self.theta[param_name] += update
 
-            self.set_bb_fn_params()  # Set DMPs parameters with new y0,g,w
+            self.set_bb_fn_params()  # Sets new bb_fn parameters
 
             # Executes rollout to compute the current cost
             cost = self.bb_fn_executor.execute(test=True)
+
             # self.update_variance(self.curr_cost, cost)
             self.curr_cost = cost
             self.train_costs.append(cost)
@@ -120,6 +122,7 @@ class Pi2BB:
             np.save(os.path.join(self.w_dir, param_name), param)
 
     def init_theta(self):
+        """Initialize a dictionary containing the black box function parameters"""
         for param_name, param_value in self.bb_fn.get_params.items():
             self.theta[param_name] = param_value.copy()
 

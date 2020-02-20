@@ -36,7 +36,7 @@ class DMPsParametric(DMPs):
 
     def generate_weights(self, w):
         if w is None:
-            w = np.zeros((self.n_dmps, self.n_bfs, self.n_bfsq))
+            w = np.zeros((self.n_dof, self.n_bfs, self.n_bfsq))
         self.w = w
 
     def gen_forcing_term(self, x, dmp_num, q=None):

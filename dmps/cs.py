@@ -17,16 +17,14 @@ class CanonicalSystem:
                 starting state of the CS
            x: float
                 current state of the CS
-           x_track: np.array
-                array representing a complete rollout of the CS
 
            Methods
            -------
-           rollout(timesteps=None)
-               Executes a rollout of the CS with a specific number of timesteps
+           rollout(tau=1.)
+               Executes a rollout of the CS with a specific frequency value (default 1)
 
-           step()
-               Executes a single CS step
+           step(tau=1.)
+               Executes a single CS step with a specific frequency value (default 1)
            """
 
     def __init__(self, dt, ax=1.0, x0=1.0, run_time=1.0):
@@ -35,35 +33,28 @@ class CanonicalSystem:
 
         self.run_time = run_time
         self.dt = dt
-        self.timesteps = int(self.run_time / self.dt)
 
         # Setting initial x, current x, x values after a rollout
         self.x0 = x0
         self.x = None
-        self.x_track = None
-
-        self.reset_state()
 
     def reset_state(self):
         """Resets the CS state"""
 
         self.x = self.x0
 
-    def rollout(self, **kwargs):
-        """Executes a rollout of the CS with a specific number of timesteps"""
+    def rollout(self, tau=1.):
+        """Executes a rollout of the CS"""
 
-        if 'tau' in kwargs:
-            timesteps = int(self.timesteps / kwargs['tau'])
-        else:
-            timesteps = self.timesteps
-        self.x_track = np.zeros(timesteps)
+        n_steps = int(self.run_time/self.dt)
+        x_track = np.zeros(n_steps)
 
         self.reset_state()
-        for t in range(timesteps):
-            self.x_track[t] = self.x
-            self.step(**kwargs)
+        for t in range(n_steps):
+            x_track[t] = self.x
+            self.step(tau=tau)
 
-        return self.x_track
+        return x_track
 
     def step(self, tau=1.0):
         """Executing a single step computing the current state value with Euler integration"""
@@ -72,21 +63,23 @@ class CanonicalSystem:
 
 
 def main():
-    from matplotlib import pyplot as plt
+    import matplotlib.pyplot as plt
 
     run_time = 4.0
     dt = 0.01
-    steps = int(run_time/dt)
+    steps = int(run_time / dt)
 
     cs = CanonicalSystem(dt, run_time=run_time)
     t = np.linspace(0, run_time, steps)
-    x_track = cs.rollout()
-    plt.xlabel("TIME")
-    plt.ylabel("CS")
-    tau = 1/2
-    x_track2 = cs.rollout(tau=tau)[:steps]
-    plt.plot(t, x_track, label="CS tau=1")
-    plt.plot(t, x_track2, label="CS tau=1/2")
+
+    plt.xlabel("t")
+    plt.ylabel("cs(t)")
+    taus = [1/4, 1/2, 1, 2]
+
+    for tau in taus:
+        x_track = cs.rollout(tau=tau)
+        plt.plot(t, x_track, label=f"tau={tau}")
+
     plt.legend()
     plt.show()
 

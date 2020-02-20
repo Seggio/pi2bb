@@ -24,7 +24,7 @@ class DMPsDiscrete(DMPs):
 
     def initialize_weights(self, w):
         if w is None:
-            w = np.zeros((self.n_dmps, self.n_bfs))
+            w = np.zeros((self.n_dof, self.n_bfs))
         self.w = w
 
     def gen_forcing_term(self, x, d, **kwargs):
