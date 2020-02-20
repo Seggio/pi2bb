@@ -80,6 +80,8 @@ class DMP:
         return x * (self.g[d] - self.y0[d])
 
     def gen_activations(self, x):
+        if isinstance(x, np.ndarray):
+            x = x[:, None]
         return np.exp(-self.h * (x - self.centers) ** 2)
 
     def gen_centers(self):
@@ -101,7 +103,7 @@ class DMP:
 
         self.reset_state()
 
-        n_steps = int(self.run_time / self.dt)
+        n_steps = self.compute_nsteps()
 
         y_track = np.zeros((n_steps, self.n_dof))
         dy_track = np.zeros((n_steps, self.n_dof))
@@ -162,6 +164,69 @@ class DMP:
                 "g": self.g,
                 "w": self.w}
 
+    def imitate_path(self, y_des, plot=False):
+
+        # set initial state and goal
+        if y_des.ndim == 1:
+            y_des = y_des.reshape(1, len(y_des))
+        assert y_des.ndim == 2
+
+        # Setting starting position and goal
+        self.y0 = y_des[:, 0].copy()
+        self.g = y_des[:, -1].copy()
+
+        self.check_offset()
+
+        # generate function to interpolate the desired trajectory
+        import scipy.interpolate
+
+        n_steps = self.compute_nsteps()
+        path = np.zeros((self.n_dof, n_steps))
+        x = np.linspace(0, self.run_time, y_des.shape[1])
+
+        for d in range(self.n_dof):
+            path_gen = scipy.interpolate.interp1d(x, y_des[d])
+            for t in range(n_steps):
+                path[d, t] = path_gen(t * self.dt)
+        y_des = path
+
+        # calculate velocity of y_des with central differences
+        dy_des = np.gradient(y_des, axis=1) / self.dt
+
+        # calculate acceleration of y_des with central differences
+        ddy_des = np.gradient(dy_des, axis=1) / self.dt
+
+        f_target = np.zeros((y_des.shape[1], self.n_dof))
+        # find the force required to move along this trajectory
+        for d in range(self.n_dof):
+            f_target[:, d] = ddy_des[d] - self.ay[d] * (
+                    self.by[d] * (self.g[d] - y_des[d]) - dy_des[d]
+            )
+
+        # calculate x and psi
+        x_track = self.cs.rollout()
+        psi_track = self.gen_activations(x_track)
+
+        # efficiently calculate BF weights using weighted linear regression
+        self.w = np.zeros((self.n_dof, self.n_bfs))
+        for d in range(self.n_dof):
+            # spatial scaling term
+            k = self.g[d] - self.y0[d]
+            for b in range(self.n_bfs):
+                num = np.sum(x_track * psi_track[:, b] * f_target[:, d])
+                den = np.sum(x_track ** 2 * psi_track[:, b])
+                self.w[d, b] = num / den
+                if abs(k) > 1e-5:
+                    self.w[d, b] /= k
+
+        self.w = np.nan_to_num(self.w)
+
+        self.reset_state()
+        return y_des
+
+    def compute_nsteps(self):
+        return int(self.run_time / self.dt)
+
 
 def main():
 
@@ -186,6 +251,30 @@ def main():
     plt.legend()
     plt.show()
 
+def imitate_test():
+
+    import matplotlib.pyplot as plt
+
+    dmp = DMP(n_bfs=1000)
+    y_des = np.sqrt(np.linspace(0, 3 * np.pi, 100) * 4.5)
+    print(y_des.shape)
+
+    if y_des.ndim == 1:
+        y_des = y_des.reshape(1, len(y_des))
+    dmp.imitate_path(y_des)
+    trajectory, _, _ = dmp.rollout()
+    print(dmp.w)
+
+    for dim in range(y_des.shape[0]):
+
+        plt.subplot(1, y_des.shape[0], dim+1)
+        plt.plot(y_des[dim], label=f"desired")
+        plt.plot(trajectory.T[dim], label=f"approximated")
+
+    plt.legend()
+    plt.show()
+
+
 
 if __name__ == "__main__":
-    main()
+    imitate_test()
