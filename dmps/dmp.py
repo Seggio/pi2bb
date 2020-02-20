@@ -30,10 +30,15 @@ class DMP:
            Executes a single DMP step
        """
 
+<<<<<<< Updated upstream
     def __init__(self, n_dof=1, n_bfs=25,
                  dt=.01, run_time=1.0,
                  w=None, y0=0, g=1, dy0=0,
                  ay=None, by=None, **kwargs):
+=======
+    def __init__(self, n_dof=1, n_bfs=25, dt=.01, w=None,
+                 y0=0, goal=1, ay=None, by=None, **kwargs):
+>>>>>>> Stashed changes
 
         self.n_dof = n_dof
         self.n_bfs = n_bfs
@@ -42,6 +47,7 @@ class DMP:
         self.run_time = run_time
 
         if isinstance(y0, (int, float)):
+<<<<<<< Updated upstream
             y0 = np.ones(self.n_dof) * y0
         self.y0 = y0
 
@@ -52,6 +58,14 @@ class DMP:
         if isinstance(g, (int, float)):
             g = np.ones(self.n_dof) * g
         self.g = g
+=======
+            y0 = np.ones(self.n_dof)*y0
+        self.y0 = y0
+
+        if isinstance(goal, (int, float)):
+            goal = np.ones(self.n_dof)*goal
+        self.g = goal
+>>>>>>> Stashed changes
 
         if w is None:
             w = np.zeros((self.n_dof, self.n_bfs))
@@ -62,12 +76,23 @@ class DMP:
         self.by = self.ay / 4. if by is None else by
 
         # set up the CS
+<<<<<<< Updated upstream
         self.cs = CanonicalSystem(dt=self.dt, run_time=self.run_time, **kwargs)
+=======
+        self.cs = CanonicalSystem(dt=self.dt, **kwargs)
+        self.n_steps = self.cs.n_steps
+>>>>>>> Stashed changes
 
         # set up the kernels
         self.centers = None
         self.gen_centers()
         self.h = np.ones(self.n_bfs) * self.n_bfs ** 1.5 / self.centers / self.cs.ax
+<<<<<<< Updated upstream
+=======
+
+        # checks the offset g-y0
+        self.check_offset()
+>>>>>>> Stashed changes
 
         # set up the initial DMP state
         self.y = None
@@ -80,6 +105,7 @@ class DMP:
         return x * (self.g[d] - self.y0[d])
 
     def gen_activations(self, x):
+<<<<<<< Updated upstream
         if isinstance(x, np.ndarray):
             x = x[:, None]
         return np.exp(-self.h * (x - self.centers) ** 2)
@@ -94,6 +120,22 @@ class DMP:
                 (np.dot(psi, self.w[d])) / np.sum(psi))
 
     def rollout(self, tau=1.0):
+=======
+        return np.exp(-self.h * (x - self.centers) ** 2)
+
+    def gen_centers(self):
+
+        des_c = np.linspace(0, self.cs.run_time, self.n_bfs)
+        self.centers = np.exp(-self.cs.ax * des_c)
+
+    def gen_forcing_term(self, x, d):
+
+        activations = self.gen_activations(x)
+        return (self.gen_front_term(x, d) *
+                (np.dot(activations, self.w[d])) / np.sum(activations))
+
+    def rollout(self, timesteps=None, **kwargs):
+>>>>>>> Stashed changes
         """Executes a complete rollout of the DMPs
 
         Retruns:
@@ -143,11 +185,19 @@ class DMP:
         return self.y, self.dy, self.ddy
 
     def reset_state(self):
+<<<<<<< Updated upstream
 
         self.y = self.y0.copy()
         self.dy = self.dy0.copy()
         self.ddy = np.zeros(self.n_dof)
 
+=======
+        """Resets the DMP state"""
+
+        self.y = self.y0.copy()
+        self.dy = np.zeros(self.n_dof)
+        self.ddy = np.zeros(self.n_dof)
+>>>>>>> Stashed changes
         self.cs.reset_state()
 
     def check_offset(self):
@@ -158,7 +208,11 @@ class DMP:
                 self.g[d] += 1e-4
 
     def get_params(self):
+<<<<<<< Updated upstream
         """Returns a dictionary {param_name: param_value}"""
+=======
+        """ Returns a dictionary {param_name: param_value}"""
+>>>>>>> Stashed changes
 
         return {"y0": self.y0,
                 "g": self.g,

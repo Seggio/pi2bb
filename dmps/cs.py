@@ -20,11 +20,19 @@ class CanonicalSystem:
 
            Methods
            -------
+<<<<<<< Updated upstream
            rollout(tau=1.)
                Executes a rollout of the CS with a specific frequency value (default 1)
 
            step(tau=1.)
                Executes a single CS step with a specific frequency value (default 1)
+=======
+           rollout(tau=1)
+               Executes a rollout of the CS with a specific number of timesteps
+
+           step(tau=1)
+               Executes a single CS step
+>>>>>>> Stashed changes
            """
 
     def __init__(self, dt, ax=1.0, x0=1.0, run_time=1.0):
@@ -33,16 +41,26 @@ class CanonicalSystem:
 
         self.run_time = run_time
         self.dt = dt
+<<<<<<< Updated upstream
+=======
+        self.n_steps = int(self.run_time / self.dt)
+>>>>>>> Stashed changes
 
-        # Setting initial x, current x, x values after a rollout
+        # Setting initial x, current x
         self.x0 = x0
         self.x = None
+<<<<<<< Updated upstream
+=======
+
+        self.reset_state()
+>>>>>>> Stashed changes
 
     def reset_state(self):
         """Resets the CS state"""
 
         self.x = self.x0
 
+<<<<<<< Updated upstream
     def rollout(self, tau=1.):
         """Executes a rollout of the CS"""
 
@@ -55,11 +73,24 @@ class CanonicalSystem:
             self.step(tau=tau)
 
         return x_track
+=======
+    def execute_rollout(self, tau=1):
+        """Executes a rollout of the CS with a specific number of timesteps"""
 
-    def step(self, tau=1.0):
-        """Executing a single step computing the current state value with Euler integration"""
+        x_track = np.zeros(self.n_steps)
+
+        self.reset_state()
+
+        for t in range(self.n_steps):
+            x_track[t] = self.x
+            self.step(tau)
+>>>>>>> Stashed changes
+
+        return x_track
+
+    def step(self, tau):
+        """Executing a single step updating the current state with Euler integration"""
         self.x += (-self.ax * self.x) * tau * self.dt
-        return self.x
 
 
 def main():

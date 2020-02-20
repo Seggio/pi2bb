@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bbef065-74b6-4c30-a503-8222ab44d17c" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dmps/dmp.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmps/dmp.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmps/cs.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmps/cs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmps/dmp.py" beforeDir="false" afterPath="$PROJECT_DIR$/dmps/dmp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_train.txt" beforeDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +64,11 @@
       <recent name="$PROJECT_DIR$/dmps" />
     </key>
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager" selected="Python.dmp">
+=======
+  <component name="RunManager" selected="Python.cs">
+>>>>>>> Stashed changes
     <configuration name="LWR" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pi2bb" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,6 +103,10 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< Updated upstream
+=======
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+>>>>>>> Stashed changes
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dmps/cs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -100,7 +116,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< Updated upstream
     <configuration name="dmp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="dmp_discrete" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> Stashed changes
       <module name="pi2bb" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -112,7 +132,12 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< Updated upstream
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dmps/dmp.py" />
+=======
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dmps/dmp_discrete.py" />
+>>>>>>> Stashed changes
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,7 +146,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< Updated upstream
     <configuration name="dmp_discrete" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="regression_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> Stashed changes
       <module name="pi2bb" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,12 +158,20 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+<<<<<<< Updated upstream
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dmps" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+>>>>>>> Stashed changes
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+<<<<<<< Updated upstream
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dmps/dmp_discrete.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/regression_test.py" />
+>>>>>>> Stashed changes
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,6 +192,10 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< Updated upstream
+=======
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+>>>>>>> Stashed changes
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bbo/test_pi2bb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -166,11 +207,18 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< Updated upstream
         <item itemvalue="Python.dmp" />
+=======
+>>>>>>> Stashed changes
         <item itemvalue="Python.cs" />
         <item itemvalue="Python.dmp_discrete" />
         <item itemvalue="Python.test_pi2bb" />
         <item itemvalue="Python.LWR" />
+<<<<<<< Updated upstream
+=======
+        <item itemvalue="Python.regression_test" />
+>>>>>>> Stashed changes
       </list>
     </recent_temporary>
   </component>
@@ -229,6 +277,7 @@
       <workItem from="1579630002599" duration="12319000" />
       <workItem from="1579794969053" duration="59678000" />
       <workItem from="1582106225839" duration="2314000" />
+      <workItem from="1582139618420" duration="1735000" />
     </task>
     <servers />
   </component>
@@ -310,15 +359,21 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="680" y="281" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1575555518557" />
+    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582139787195">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1582139787195" />
     <state x="251" y="102" key="DiffContextDialog" timestamp="1576167183011">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="251" y="102" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1576167183011" />
-    <state x="526" y="199" width="495" height="482" key="FileChooserDialogImpl" timestamp="1582123491320">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="739" y="280" width="495" height="482" key="FileChooserDialogImpl" timestamp="1582139740891">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="526" y="199" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1582123491320" />
+    <state x="739" y="280" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1582139740891" />
     <state x="779" y="297" width="495" height="482" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1579967105612" />
+<<<<<<< Updated upstream
     <state width="1345" height="166" key="GridCell.Tab.0.bottom" timestamp="1582216945221">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -341,6 +396,34 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1345" height="166" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582216945221" />
+=======
+    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1582146439568">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1345" height="256" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1582122921673" />
+    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1582146439568" />
+    <state width="1809" height="536" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425900" />
+    <state width="1807" height="113" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621908" />
+    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1582146439568">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1345" height="256" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1582122921673" />
+    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1582146439568" />
+    <state width="1809" height="536" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425899" />
+    <state width="1807" height="113" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621908" />
+    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1582146439568">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1345" height="256" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1582122921673" />
+    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1582146439568" />
+    <state width="1809" height="536" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425898" />
+    <state width="1807" height="113" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621907" />
+    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1582146439568">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1345" height="256" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582122921673" />
+    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1582146439568" />
+>>>>>>> Stashed changes
     <state width="1809" height="536" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1580328425899" />
     <state width="1807" height="113" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1582107621908" />
     <state width="1809" height="365" key="GridCell.Tab.1.bottom" timestamp="1580328425891">
@@ -363,10 +446,18 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="643" y="263" width="697" height="549" key="RollbackChangesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1579030579891" />
+<<<<<<< Updated upstream
     <state x="310" y="53" key="SettingsEditor" timestamp="1582206300637">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="310" y="53" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1582206300637" />
+=======
+    <state x="436" y="75" key="SettingsEditor" timestamp="1582139745943">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="310" y="53" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1582119163801" />
+    <state x="436" y="75" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1582139745943" />
+>>>>>>> Stashed changes
     <state x="486" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1579967437887" />
     <state x="666" y="276" width="650" height="524" key="VcsDiffUtil.ChangesDialog" timestamp="1576164320610">
       <screen x="65" y="24" width="1855" height="1056" />
@@ -385,5 +476,8 @@
     </state>
     <state x="434" y="154" width="495" height="494" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1582117514632" />
     <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1578762313846" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pi2bb$cs.coverage" NAME="cs Coverage Results" MODIFIED="1582139813845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dmps" />
   </component>
 </project>
